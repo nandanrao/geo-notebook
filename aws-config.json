@@ -1,0 +1,31 @@
+{
+  "family": "goe-notebook",
+  "volumes": [
+    {
+
+    }
+  ],
+  "containerDefinitions": [
+    {
+      "name": "geo-notebook",
+      "image": "nandanrao/geo-notebook",
+      "cpu": "10",
+      "memory": "300",
+      "essential": true,
+      "portMappings": [
+        {
+          "hostPort": "8888",
+          "containerPort": "8888",
+          "protocol": "tcp"
+        }
+      ],
+      "links": [],
+      "command": [],
+      "entryPoint": [
+        "start-notebook.sh --"
+      ],
+      "environment": [],
+      "mountPoints": []
+    }
+  ]
+}
